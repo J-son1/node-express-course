@@ -46,6 +46,13 @@ app.post('/login', function(req, res) {
   }
 });
 
+app.post('/logout', function(req, res) {
+  res.json({
+    success: true,
+    message: 'you have logged out successfully'
+  });
+});
+
 app.listen(8000, function() {
   console.log('server is listening');
 });
